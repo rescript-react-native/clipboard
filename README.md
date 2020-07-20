@@ -4,7 +4,7 @@
 [![Version](https://img.shields.io/npm/v/@reason-react-native/clipboard.svg)](https://www.npmjs.com/package/@reason-react-native/clipboard)
 
 These are complete BuckleScript bindings to
-[`@reason-react-native/clipboard`](https://github.com/react-native-community/clipboard),
+[`@react-native-community/clipboard`](https://github.com/react-native-community/clipboard),
 in Reason syntax.
 
 Version `x.y.z` of `@reason-react-native/clipboard` should be compatible with

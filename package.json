@@ -1,11 +1,11 @@
 {
   "name": "@reason-react-native/clipboard",
-  "version": "1.2.0",
+  "version": "1.5.0",
   "publishConfig": {
     "access": "public"
   },
   "peerDependencies": {
-    "@react-native-community/clipboard": "^1.2.0"
+    "@react-native-community/clipboard": "^1.5.0"
   },
   "repository": "https://github.com/reason-react-native/clipboard.git",
   "license": "MIT",

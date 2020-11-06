@@ -1,19 +1,21 @@
-# BuckleScript bindings to @react-native-community/clipboard
+# `@reason-react-native/clipboard`
 
 [![Build Status](https://github.com/reason-react-native/clipboard/workflows/Build/badge.svg)](https://github.com/reason-react-native/clipboard/actions)
-[![Version](https://img.shields.io/npm/v/@reason-react-native/clipboard.svg)](https://www.npmjs.com/package/@reason-react-native/clipboard)
+[![Version](https://img.shields.io/npm/v/@reason-react-native/clipboard.svg)](https://www.npmjs.com/@reason-react-native/clipboard)
+[![Chat](https://img.shields.io/discord/235176658175262720.svg?logo=discord&colorb=blue)](https://reason-react-native.github.io/discord/)
 
-These are complete BuckleScript bindings to
-[`@react-native-community/clipboard`](https://github.com/react-native-community/clipboard),
-in Reason syntax.
+[ReScript](https://rescript-lang.org) / [Reason](https://reasonml.github.io) bindings for
+[`@react-native-community/clipboard`](https://github.com/react-native-clipboard/clipboard).
 
-Version `x.y.z` of `@reason-react-native/clipboard` should be compatible with
-version `x.y.*` of `@react-native-community/clipboard`.
+Exposed as `ReactNativeClipboard` module.
+
+`@reason-react-native/clipboard` X.y.\* means it's compatible with
+`@react-native-community/clipboard` X.y.\*
 
 ## Installation
 
 When
-[`@react-native-community/clipboard`](https://github.com/react-native-community/clipboard)
+[`@react-native-community/clipboard`](https://github.com/react-native-clipboard/clipboard)
 is properly installed & configured by following their installation instructions,
 you can install the bindings:
 
@@ -24,7 +26,7 @@ yarn add @reason-react-native/clipboard
 ```
 
 `@reason-react-native/clipboard` should be added to `bs-dependencies` in your
-`bsconfig.json`. Something like
+`bsconfig.json`:
 
 ```diff
 {

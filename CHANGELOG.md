@@ -1,5 +1,9 @@
 # Changelog of `@reason-react-native/clipboard`
 
+## 1.5.1 - 2020-11-17
+
+Fix npm description
+
 ## 1.5.0 - 2020-11-06
 
 - Added `hasString`

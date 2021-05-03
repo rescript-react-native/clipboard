@@ -1,15 +1,15 @@
-# `@reason-react-native/clipboard`
+# `@rescript-react-native/clipboard`
 
-[![Build Status](https://github.com/reason-react-native/clipboard/workflows/Build/badge.svg)](https://github.com/reason-react-native/clipboard/actions)
-[![Version](https://img.shields.io/npm/v/@reason-react-native/clipboard.svg)](https://www.npmjs.com/@reason-react-native/clipboard)
-[![Chat](https://img.shields.io/discord/235176658175262720.svg?logo=discord&colorb=blue)](https://reason-react-native.github.io/discord/)
+[![Build Status](https://github.com/rescript-react-native/clipboard/workflows/Build/badge.svg)](https://github.com/rescript-react-native/clipboard/actions)
+[![Version](https://img.shields.io/npm/v/@rescript-react-native/clipboard.svg)](https://www.npmjs.com/@rescript-react-native/clipboard)
+[![ReScript Forum](https://img.shields.io/discourse/posts?color=e6484f&label=ReScript%20Forum&server=https%3A%2F%2Fforum.rescript-lang.org)](https://forum.rescript-lang.org/)
 
-[ReScript](https://rescript-lang.org) / [Reason](https://reasonml.github.io) bindings for
+[ReScript](https://rescript-lang.org) bindings for
 [`@react-native-community/clipboard`](https://github.com/react-native-clipboard/clipboard).
 
 Exposed as `ReactNativeClipboard` module.
 
-`@reason-react-native/clipboard` X.y.\* means it's compatible with
+`@rescript-react-native/clipboard` X.y.\* means it's compatible with
 `@react-native-community/clipboard` X.y.\*
 
 ## Installation
@@ -20,22 +20,22 @@ is properly installed & configured by following their installation instructions,
 you can install the bindings:
 
 ```console
-npm install @reason-react-native/clipboard
+npm install @rescript-react-native/clipboard
 # or
-yarn add @reason-react-native/clipboard
+yarn add @rescript-react-native/clipboard
 ```
 
-`@reason-react-native/clipboard` should be added to `bs-dependencies` in your
+`@rescript-react-native/clipboard` should be added to `bs-dependencies` in your
 `bsconfig.json`:
 
 ```diff
 {
   //...
   "bs-dependencies": [
-    "reason-react",
-    "reason-react-native",
+    "@rescript/react",
+    "rescript-react-native",
     // ...
-+    "@reason-react-native/clipboard"
++    "@rescript-react-native/clipboard"
   ],
   //...
 }
@@ -50,7 +50,7 @@ yarn add @reason-react-native/clipboard
 To attempt reading content from the Clipboard; resolves to a `string` if
 successful.
 
-```reason
+```rescript
 getString: unit => Js.Promise.t(string)
 ```
 
@@ -58,7 +58,7 @@ getString: unit => Js.Promise.t(string)
 
 To copy a `string` to the Clipbard.
 
-```reason
+```rescript
 setString: string => unit
 ```
 
@@ -66,13 +66,13 @@ setString: string => unit
 
 ### `useClipboard`
 
-```reason
+```rescript
 useClipboard: unit => (string, string => unit)
 ```
 
 #### Example
 
-```reason
+```rescript
 open ReactNative;
 
 ReactNativeClipboard.setString("initial value");
@@ -99,11 +99,11 @@ releases.
 ## Contribute
 
 Read the
-[contribution guidelines](https://github.com/reason-react-native/.github/blob/master/CONTRIBUTING.md)
+[contribution guidelines](https://github.com/rescript-react-native/.github/blob/master/CONTRIBUTING.md)
 before contributing.
 
 ## Code of Conduct
 
 We want this community to be friendly and respectful to each other. Please read
-[our full code of conduct](https://github.com/reason-react-native/.github/blob/master/CODE_OF_CONDUCT.md)
+[our full code of conduct](https://github.com/rescript-react-native/.github/blob/master/CODE_OF_CONDUCT.md)
 so that you can understand what actions will and will not be tolerated.

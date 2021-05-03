@@ -1,4 +1,4 @@
-# Changelog of `@reason-react-native/clipboard`
+# Changelog of `@rescript-react-native/clipboard`
 
 ## 1.5.1 - 2020-11-17
 
